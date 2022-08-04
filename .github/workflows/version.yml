@@ -1,5 +1,13 @@
 name: Resources
-on: repository_dispatch
+on:
+  workflow_call:
+    inputs:
+      test:
+        required: false
+        type: string
+    secrets:
+      test:
+        required: false
 jobs:
     resources:
         name: Update resources
