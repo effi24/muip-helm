@@ -10,6 +10,7 @@ jobs:
             - name: change version
               run: |
                 sed -e "s/image/effi24\/myip:myipp/g"
+                cat values.yml
               
             - uses: actions/setup-node@v1
 
