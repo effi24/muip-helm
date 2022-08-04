@@ -9,12 +9,9 @@ jobs:
             
             - name: change version
               run: |
-                cat values.yaml
+                sed '/^image:/{n;s/key:.*/key: "effi24/myip:myipp"/;}' file.yaml
               
             - uses: actions/setup-node@v1
-
-            - name: Fetch resources
-              run: ./scripts/fetch-resources.sh
 
             - name: Update resources
               uses: test-room-7/action-update-file@v1
