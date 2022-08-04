@@ -1,0 +1,12 @@
+deployment:
+  name: myip-deploy
+  app: myip
+  replicas: 2
+  image: effi24/myip:myip
+  containerPort: 3000 
+
+service:
+  name: myip-service
+  port: 80
+  targetPort: 3000
+  type: NodePort
