@@ -2,7 +2,7 @@ deployment:
   name: myip-deploy
   app: myip
   replicas: 2
-  image: effi24/myip:myipp
+  image: effi24/myip:myip
   containerPort: 3000 
 
 service:
