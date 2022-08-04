@@ -9,7 +9,7 @@ jobs:
             
             - name: change version
               run: |
-                sed '/^image:/{n;s/key:.*/key: "effi24/myip:myipp"/;}' file.yaml
+                sed '/^image:/{n;s/key:.*/key: "effi24/myip:myipp"/;}' values.yaml
               
             - uses: actions/setup-node@v1
 
